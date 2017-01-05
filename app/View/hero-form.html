@@ -1,0 +1,23 @@
+<div class="container post-content" >
+    <div *ngFor="let model of generateArray(models)">
+        <h2>You submitted the following:</h2>
+        <div class="row">
+            <div class="col-xs-3">Id</div>
+            <div class="col-xs-9  pull-left">{{ model.id }}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Name</div>
+            <div class="col-xs-9  pull-left">{{ model.Name }}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Age</div>
+            <div class="col-xs-9 pull-left">{{ model.Age }}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">Gioi tinh</div>
+            <div class="col-xs-9 pull-left">{{ model.gioitinh }}</div>
+        </div>
+        <br>
+        <a  class="btn btn-default" [routerLink]="['/newuser', model.key_id]">Edit</a>
+    </div>
+</div>

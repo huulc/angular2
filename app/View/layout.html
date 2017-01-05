@@ -1,0 +1,19 @@
+<div class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="newuser/add">Create User</a></li>
+        <li routerLinkActive="active"><a routerLink="listuser">List User</a></li>
+    </ul>
+</div>
+<div class="container">
+    <!-- <============= content here  -->
+    <router-outlet></router-outlet>
+    <!-- content end ===================> -->
+</div>
+<div class="footer navbar-default col-md-12">
+    <div class="col-md-6 col-xs-6">
+        <p class="text-muted" style="margin: 20px 0;">Trang web sử dụng Angular2 <br> Nội dung được lấy từ <a href="https://console.firebase.google.com">Firebase</a></p>
+    </div>
+    <div class="col-md-6 col-xs-6">
+        <p class="text-muted" style="margin: 20px 0;">© Copyright <span id="copyright-year"></span> Angular2. All Rights Reserved</p>
+    </div>
+</div>
